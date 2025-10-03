@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { useToast } from "@/hooks/use-toast";
 import { Send, Users, MessageCircle } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
 
 export const RSVPForm = () => {
   const { toast } = useToast();
@@ -16,24 +17,38 @@ export const RSVPForm = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Here you would typically send the data to a backend
-    console.log("RSVP Data:", formData);
-    
-    toast({
-      title: "Terima kasih!",
-      description: "Konfirmasi kehadiran Anda telah kami terima.",
-    });
+    try {
+      const { error } = await supabase.from("rsvps").insert({
+        name: formData.name,
+        attendance: formData.attendance === "yes",
+        guest_count: formData.attendance === "yes" ? parseInt(formData.guests) : 0,
+        message: formData.message || null,
+      });
 
-    // Reset form
-    setFormData({
-      name: "",
-      attendance: "yes",
-      guests: "1",
-      message: "",
-    });
+      if (error) throw error;
+
+      toast({
+        title: "Terima kasih!",
+        description: "Konfirmasi kehadiran Anda telah kami terima.",
+      });
+
+      // Reset form
+      setFormData({
+        name: "",
+        attendance: "yes",
+        guests: "1",
+        message: "",
+      });
+    } catch (error: any) {
+      toast({
+        title: "Error",
+        description: error.message || "Gagal menyimpan data",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
