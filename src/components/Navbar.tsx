@@ -43,13 +43,13 @@ export const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="relative flex items-center justify-center h-16 md:h-20">
           {/* Logo/Title */}
           <button
             onClick={() => scrollToSection("home")}
-            className="text-xl md:text-2xl font-bold gradient-hero bg-clip-text text-transparent"
+            className="absolute left-4 md:left-8 text-xl md:text-2xl font-bold gradient-hero bg-clip-text text-transparent"
           >
-            Undangan Khitanan
+          
           </button>
 
           {/* Desktop Menu */}
@@ -70,7 +70,7 @@ export const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-primary/10 transition-smooth"
+            className="md:hidden absolute right-4 p-2 rounded-lg hover:bg-primary/10 transition-smooth"
           >
             {isOpen ? (
               <X className="w-6 h-6 text-primary" />
