@@ -19,9 +19,7 @@ export const Footer = () => {
             </p>
           </div>
 
-
           {/* Message + Family Names (as requested) */}
-       
 
           {/* Copyright */}
           <div className="pt-8 border-t border-white/20">
