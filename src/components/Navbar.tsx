@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Home, Calendar, Image, Heart, Send } from "lucide-react";
+import { Menu, X, Home, Calendar, Image, Heart, Send, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,6 +63,15 @@ export const Navbar = () => {
                 {item.label}
               </Button>
             ))}
+            <Link to="/auth">
+              <Button
+                variant="ghost"
+                className="transition-smooth hover:bg-primary/10 hover:text-primary"
+              >
+                <Shield className="w-4 h-4 mr-2" />
+                Admin
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -91,6 +101,15 @@ export const Navbar = () => {
                   <span className="font-medium">{item.label}</span>
                 </button>
               ))}
+              <Link to="/auth" className="block">
+                <button
+                  onClick={() => setIsOpen(false)}
+                  className="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-primary/10 transition-smooth text-left"
+                >
+                  <Shield className="w-5 h-5 text-primary" />
+                  <span className="font-medium">Admin</span>
+                </button>
+              </Link>
             </div>
           </div>
         )}
