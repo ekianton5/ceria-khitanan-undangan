@@ -3,12 +3,12 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 // Sample photos - in real use, these would be actual child photos
 const photos = [
-  { id: 1, url: "images/megan1.jpg", alt: "Foto 1" },
-  { id: 2, url: "images/megan2.jpg", alt: "Foto 2" },
-  { id: 3, url: "images/megan3.jpg", alt: "Foto 3" },
-  { id: 4, url: "images/megan4.jpg", alt: "Foto 4" },
-  { id: 5, url: "images/megan5.jpg", alt: "Foto 5" },
-  { id: 6, url: "images/megan6.jpg", alt: "Foto 6" },
+  { id: 1, url: "public/megan1.jpg", alt: "Foto 1" },
+  { id: 2, url: "public/megan2.jpg", alt: "Foto 2" },
+  { id: 3, url: "public/megan3.jpg", alt: "Foto 3" },
+  { id: 4, url: "public/megan4.jpg", alt: "Foto 4" },
+  { id: 5, url: "public/megan5.jpg", alt: "Foto 5" },
+  { id: 6, url: "public/megan6.jpg", alt: "Foto 6" },
 ];
 
 

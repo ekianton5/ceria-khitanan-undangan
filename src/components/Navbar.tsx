@@ -107,7 +107,7 @@ export const Navbar = () => {
                   className="w-full flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-primary/10 transition-smooth text-left"
                 >
                   <Shield className="w-5 h-5 text-primary" />
-                  <span className="font-medium">Admin</span>
+                  <span className="font-medium"></span>
                 </button>
               </Link>
             </div>
