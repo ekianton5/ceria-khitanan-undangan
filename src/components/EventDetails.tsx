@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export const EventDetails = () => {
   const openMaps = () => {
-    window.open("https://maps.google.com/?q=Masjid+Al+Ikhlas+Jakarta", "_blank");
+    window.open("https://maps.app.goo.gl/dsLxhkuALeQHpjr1A?g_st=ipc", "_blank");
   };
 
   return (
@@ -25,15 +25,22 @@ export const EventDetails = () => {
               <div className="w-16 h-16 rounded-full gradient-hero flex items-center justify-center mb-6 mx-auto">
                 <Calendar className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-center mb-4 text-primary">Acara Khitanan</h3>
+              <h3 className="text-2xl font-bold text-center mb-4 text-primary">
+                {" "}
+                Khitanan
+              </h3>
               <div className="space-y-4 text-center">
                 <div>
-                  <p className="text-sm text-muted-foreground mb-1">Hari & Tanggal</p>
-                  <p className="font-semibold text-lg text-foreground">Sabtu, 15 Juni 2024</p>
+                  <p className="text-sm text-muted-foreground mb-1">
+                    Hari & Tanggal
+                  </p>
+                  <p className="font-semibold text-lg text-foreground">
+                    Minggu, 12 Oktober 2025
+                  </p>
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground mb-1">Waktu</p>
-                  <p className="font-semibold text-lg text-foreground">09:00 - 12:00 WIB</p>
+                  <p className="font-semibold text-lg text-foreground">-</p>
                 </div>
               </div>
             </div>
@@ -43,15 +50,23 @@ export const EventDetails = () => {
               <div className="w-16 h-16 rounded-full bg-secondary flex items-center justify-center mb-6 mx-auto">
                 <Clock className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-center mb-4 text-secondary">Syukuran</h3>
+              <h3 className="text-2xl font-bold text-center mb-4 text-secondary">
+                AcaraSyukuran
+              </h3>
               <div className="space-y-4 text-center">
                 <div>
-                  <p className="text-sm text-muted-foreground mb-1">Hari & Tanggal</p>
-                  <p className="font-semibold text-lg text-foreground">Sabtu, 15 Juni 2024</p>
+                  <p className="text-sm text-muted-foreground mb-1">
+                    Hari & Tanggal
+                  </p>
+                  <p className="font-semibold text-lg text-foreground">
+                    Minggu, 19 Oktober 2025
+                  </p>
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground mb-1">Waktu</p>
-                  <p className="font-semibold text-lg text-foreground">12:00 - 14:00 WIB</p>
+                  <p className="font-semibold text-lg text-foreground">
+                    09:00 - SELESAI
+                  </p>
                 </div>
               </div>
             </div>
@@ -64,27 +79,17 @@ export const EventDetails = () => {
                 <MapPin className="w-6 h-6 text-primary" />
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-2 text-foreground">Lokasi Acara</h3>
-                <p className="text-lg font-medium text-primary mb-1">Masjid Al-Ikhlas</p>
+                <h3 className="text-2xl font-bold mb-2 text-foreground">
+                  Lokasi Acara
+                </h3>
+                <p className="text-lg font-medium text-primary mb-1">
+                  Rumah pak lala
+                </p>
                 <p className="text-muted-foreground">
-                  Jl. Raya Kebon Jeruk No. 123<br />
-                  Jakarta Barat, DKI Jakarta 11530
+                  KP.sukarajin rt 07 rw 03 no 46 desa gandasari <br />
+                  kec.Katapang, KAB.BANDUNG 40921
                 </p>
               </div>
-            </div>
-
-            {/* Map Embed */}
-            <div className="mb-6 rounded-2xl overflow-hidden shadow-soft">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666666666667!2d106.766666!3d-6.183333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTEnMDAuMCJTIDEwNsKwNDYnMDAuMCJF!5e0!3m2!1sen!2sid!4v1234567890"
-                width="100%"
-                height="300"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full"
-              ></iframe>
             </div>
 
             <Button

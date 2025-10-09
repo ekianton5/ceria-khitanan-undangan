@@ -19,23 +19,14 @@ export const Footer = () => {
             </p>
           </div>
 
-          {/* Divider */}
-          <div className="w-32 h-1 bg-white/30 mx-auto rounded-full mb-8"></div>
 
-          {/* Family Names */}
-          <div className="mb-8">
-            <p className="text-xl font-semibold mb-2">
-              Keluarga Besar
-            </p>
-            <p className="text-lg opacity-90">
-              Bapak Ahmad & Ibu Siti
-            </p>
-          </div>
+          {/* Message + Family Names (as requested) */}
+       
 
           {/* Copyright */}
           <div className="pt-8 border-t border-white/20">
             <p className="text-sm opacity-75">
-              © 2024 - Dibuat dengan penuh kasih sayang
+              © 2025 - Dibuat dengan penuh kasih sayang
             </p>
           </div>
         </div>

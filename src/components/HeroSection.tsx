@@ -32,10 +32,11 @@ export const HeroSection = () => {
           <div className="mb-12 animate-scale-in">
             <div className="inline-block px-8 py-6 rounded-3xl gradient-card shadow-soft border-2 border-primary/20">
               <h2 className="text-3xl md:text-5xl font-bold text-primary mb-2">
-                Muhammad Rizki Pratama
+                Megantara Tri Sukmara
               </h2>
+              (Megan)
               <p className="text-lg md:text-xl text-secondary font-medium">
-                Putra dari Bapak Ahmad & Ibu Siti
+                Putra dari Bapak Lala Sukmara & Ibu Siti
               </p>
             </div>
           </div>
@@ -55,14 +56,14 @@ export const HeroSection = () => {
               <Calendar className="w-6 h-6 text-primary" />
               <div className="text-left">
                 <p className="text-sm text-muted-foreground">Tanggal</p>
-                <p className="font-semibold text-foreground">Sabtu, 15 Juni 2024</p>
+                <p className="font-semibold text-foreground">Minggu, 19 Oktober 2025</p>
               </div>
             </div>
             <div className="flex items-center justify-center gap-3 px-6 py-4 rounded-2xl bg-card shadow-soft transition-smooth hover:shadow-hover">
               <MapPin className="w-6 h-6 text-secondary" />
               <div className="text-left">
                 <p className="text-sm text-muted-foreground">Waktu</p>
-                <p className="font-semibold text-foreground">09:00 - 14:00 WIB</p>
+                <p className="font-semibold text-foreground">09:00 - SELESAI </p>
               </div>
             </div>
           </div>

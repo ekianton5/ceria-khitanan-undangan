@@ -3,13 +3,14 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 // Sample photos - in real use, these would be actual child photos
 const photos = [
-  { id: 1, url: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=800&q=80", alt: "Foto 1" },
-  { id: 2, url: "https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?w=800&q=80", alt: "Foto 2" },
-  { id: 3, url: "https://images.unsplash.com/photo-1544717305-2782549b5136?w=800&q=80", alt: "Foto 3" },
-  { id: 4, url: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=800&q=80", alt: "Foto 4" },
-  { id: 5, url: "https://images.unsplash.com/photo-1514315384763-ba401779410f?w=800&q=80", alt: "Foto 5" },
-  { id: 6, url: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=800&q=80", alt: "Foto 6" },
+  { id: 1, url: "images/megan1.jpg", alt: "Foto 1" },
+  { id: 2, url: "images/megan2.jpg", alt: "Foto 2" },
+  { id: 3, url: "images/megan3.jpg", alt: "Foto 3" },
+  { id: 4, url: "images/megan4.jpg", alt: "Foto 4" },
+  { id: 5, url: "images/megan5.jpg", alt: "Foto 5" },
+  { id: 6, url: "images/megan6.jpg", alt: "Foto 6" },
 ];
+
 
 export const PhotoGallery = () => {
   const [selectedPhoto, setSelectedPhoto] = useState<typeof photos[0] | null>(null);
@@ -25,7 +26,7 @@ export const PhotoGallery = () => {
             </h2>
             <div className="w-24 h-1 gradient-accent mx-auto rounded-full mb-4"></div>
             <p className="text-lg text-muted-foreground">
-              Kenangan manis perjalanan hidup kami
+              Kenangan megantara
             </p>
           </div>
 

@@ -31,7 +31,6 @@ export const Navbar = () => {
     { id: "details", label: "Detail Acara", icon: Calendar },
     { id: "gallery", label: "Galeri", icon: Image },
     { id: "prayers", label: "Doa", icon: Heart },
-    { id: "rsvp", label: "RSVP", icon: Send },
   ];
 
   return (
@@ -48,9 +47,7 @@ export const Navbar = () => {
           <button
             onClick={() => scrollToSection("home")}
             className="absolute left-4 md:left-8 text-xl md:text-2xl font-bold gradient-hero bg-clip-text text-transparent"
-          >
-          
-          </button>
+          ></button>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-2">
